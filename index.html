@@ -20,6 +20,7 @@
           colors: {
             clifford: '#da373d',
             bike: '#E76F51',
+            bikeprimary: 'rgba(231, 111, 81, 0.10)',
           }
         }
       }
@@ -71,9 +72,26 @@
       </div>
     </nav>
     <!-- carusel  -->
-    <div class="carousel w-full">
+    <div class="carousel lg:h-[550px] w-full bg-bikeprimary">
       <div id="slide1" class="carousel-item relative w-full">
-        <img src="./images/slider/bike1.png" class="w-full" />
+        <div class="flex flex-col lg:flex-row gap-20 lg:p-20 p-4">
+          <div class="flex-1">
+            <h2 class="text-6xl font-bold">
+              Ride-on R15 V4
+              <br>
+              with Smile
+            </h2>
+            <p>
+              Amet minim mollit non deserunt ullamco
+              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+            <button class="bg-bike btn btn-ghost">Purchase</button>
+          </div>
+          <div class="flex-1">
+            <img src="./images/slider/bike1.png" class="w-[440px]" />
+          </div>
+        </div>
+
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <a href="#slide4" class="btn btn-circle">❮</a>
           <a href="#slide2" class="btn btn-circle">❯</a>
